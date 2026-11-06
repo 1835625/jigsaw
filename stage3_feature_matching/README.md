@@ -18,5 +18,11 @@
 - `output/assignments.json`
 - `output/matches/`：每块碎片的关键点匹配可视化。
 
-当前状态：目录和交接契约已建立，匹配脚本待实现。
+当前状态：已实现 `match_sift.py`（SIFT + Lowe 比值检验 + RANSAC + 匈牙利分配）。
+
+```bash
+python3 stage3_feature_matching/match_sift.py
+```
+
+输出 `output/assignments.json`（Stage 4 可直接读取）、`output/matches/`、回贴对比图。样例 16/16 均映射到源多边形；S05 内点较少，标为 `review`。
 

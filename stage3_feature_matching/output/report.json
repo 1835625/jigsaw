@@ -1,0 +1,141 @@
+{
+  "quality": {
+    "coverage": 0.9954427083333334,
+    "psnr_covered": 19.313734873627762,
+    "ssim_gray": 0.7711558200609757,
+    "mse_covered": 761.5648193359375
+  },
+  "review": [
+    "S05"
+  ],
+  "assignments": [
+    {
+      "scan_piece_id": "S01",
+      "source_piece_id": "P03",
+      "inliers": 39,
+      "iou": 0.9613960049191204,
+      "confidence": 0.9359615355469375,
+      "status": "accepted"
+    },
+    {
+      "scan_piece_id": "S02",
+      "source_piece_id": "P10",
+      "inliers": 23,
+      "iou": 0.9765075147745881,
+      "confidence": 0.8833677755879585,
+      "status": "accepted"
+    },
+    {
+      "scan_piece_id": "S03",
+      "source_piece_id": "P12",
+      "inliers": 38,
+      "iou": 0.9725340036682776,
+      "confidence": 0.9267707364333335,
+      "status": "accepted"
+    },
+    {
+      "scan_piece_id": "S04",
+      "source_piece_id": "P06",
+      "inliers": 20,
+      "iou": 0.98361461003617,
+      "confidence": 0.9226265745162765,
+      "status": "accepted"
+    },
+    {
+      "scan_piece_id": "S05",
+      "source_piece_id": "P07",
+      "inliers": 9,
+      "iou": 0.9600386801593408,
+      "confidence": 0.7445174060717035,
+      "status": "review"
+    },
+    {
+      "scan_piece_id": "S06",
+      "source_piece_id": "P08",
+      "inliers": 40,
+      "iou": 0.9466619948071673,
+      "confidence": 0.8759978976632252,
+      "status": "accepted"
+    },
+    {
+      "scan_piece_id": "S07",
+      "source_piece_id": "P11",
+      "inliers": 76,
+      "iou": 0.9749380018062703,
+      "confidence": 0.9553887674794883,
+      "status": "accepted"
+    },
+    {
+      "scan_piece_id": "S08",
+      "source_piece_id": "P02",
+      "inliers": 49,
+      "iou": 0.9791269330862458,
+      "confidence": 0.9312850859905055,
+      "status": "accepted"
+    },
+    {
+      "scan_piece_id": "S09",
+      "source_piece_id": "P01",
+      "inliers": 76,
+      "iou": 0.9745091691087137,
+      "confidence": 0.9340846816544766,
+      "status": "accepted"
+    },
+    {
+      "scan_piece_id": "S10",
+      "source_piece_id": "P09",
+      "inliers": 66,
+      "iou": 0.9722268197515028,
+      "confidence": 0.866214940175305,
+      "status": "accepted"
+    },
+    {
+      "scan_piece_id": "S11",
+      "source_piece_id": "P16",
+      "inliers": 43,
+      "iou": 0.9605121878467471,
+      "confidence": 0.9393733416738932,
+      "status": "accepted"
+    },
+    {
+      "scan_piece_id": "S12",
+      "source_piece_id": "P04",
+      "inliers": 34,
+      "iou": 0.9834707496343957,
+      "confidence": 0.9641834589570997,
+      "status": "accepted"
+    },
+    {
+      "scan_piece_id": "S13",
+      "source_piece_id": "P13",
+      "inliers": 30,
+      "iou": 0.9659502847948682,
+      "confidence": 0.910993417631375,
+      "status": "accepted"
+    },
+    {
+      "scan_piece_id": "S14",
+      "source_piece_id": "P05",
+      "inliers": 15,
+      "iou": 0.8660129698820317,
+      "confidence": 0.8660216259205984,
+      "status": "accepted"
+    },
+    {
+      "scan_piece_id": "S15",
+      "source_piece_id": "P14",
+      "inliers": 38,
+      "iou": 0.9704178383196048,
+      "confidence": 0.8785062090620039,
+      "status": "accepted"
+    },
+    {
+      "scan_piece_id": "S16",
+      "source_piece_id": "P15",
+      "inliers": 58,
+      "iou": 0.9703986367938122,
+      "confidence": 0.9589016087794378,
+      "status": "accepted"
+    }
+  ]
+}

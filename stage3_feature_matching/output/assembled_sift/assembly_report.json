@@ -1,0 +1,1098 @@
+{
+  "schema_version": "1.0",
+  "algorithm_version": "stage4-assembly-1.0.0",
+  "session_id": "9ab5743b5eec79a1",
+  "input_mode": "reference_assignments",
+  "status": "review",
+  "warnings": [
+    "S05: upstream manual review required.",
+    "S06: upstream manual review required."
+  ],
+  "piece_count": 16,
+  "coordinate_system": "assembly_px",
+  "rectangle_px": [
+    1280.0,
+    720.0
+  ],
+  "canvas_size_px": [
+    1280,
+    720
+  ],
+  "board_rotation_clockwise_deg": 0,
+  "H_solver_to_assembly": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "orientation": {
+    "method": "reference_assignments",
+    "candidates": []
+  },
+  "reference_used": {
+    "pixels_for_gap_filling": false,
+    "global_orientation": false,
+    "color_statistics": true,
+    "evaluation": true,
+    "original_size_px": [
+      1280,
+      720
+    ],
+    "resized_size_px": [
+      1280,
+      720
+    ]
+  },
+  "inputs": {
+    "pieces_sha256": "5819edc5f4ae264879016939443f648c3b81836e4e7a74eeccc91c6436c3f3bf",
+    "placements_sha256": "d08c50843986d96a690820a210fba8904c016ef569f62f16bf526123b379e21a"
+  },
+  "geometry": {
+    "total_piece_area": 921600.0007377502,
+    "rectangle_area": 921600.0,
+    "missing_area": 0.00826546636826464,
+    "overlap_excess_area": 0.009003216749988496,
+    "outside_area": 0.0,
+    "coverage_fraction": 0.999999991031395,
+    "score": 1.873772038241035e-08,
+    "area_unit": "assembly_px_squared"
+  },
+  "raster": {
+    "covered_fraction": 0.9954774305555556,
+    "uncovered_pixels": 4168,
+    "overlap_pixels": 4117
+  },
+  "metrics": {
+    "raw": {
+      "available": true,
+      "mse": 835.2105135995371,
+      "psnr_db": 18.91284408292188,
+      "identical": false,
+      "covered_psnr_db": 19.29039748647751,
+      "ssim_gray": 0.7714913608825771
+    },
+    "corrected": {
+      "available": true,
+      "mse": 521.3849027054398,
+      "psnr_db": 20.959219093456237,
+      "identical": false,
+      "covered_psnr_db": 21.594660133742593,
+      "ssim_gray": 0.7805127254017017
+    }
+  },
+  "seams": [
+    {
+      "piece_a": "S01",
+      "piece_b": "S02",
+      "shared_edge_length_px": 261.5631751989565,
+      "sample_pairs": 92,
+      "mean_color_difference_deltaE76": 4.066043376922607,
+      "mean_gradient_difference": 2.1151795387268066,
+      "reference_color_difference_deltaE76": 7.7923359870910645,
+      "gradient_residual_vs_reference": 3.0475902557373047
+    },
+    {
+      "piece_a": "S01",
+      "piece_b": "S09",
+      "shared_edge_length_px": 343.60931329440126,
+      "sample_pairs": 115,
+      "mean_color_difference_deltaE76": 9.344642639160156,
+      "mean_gradient_difference": 4.040489673614502,
+      "reference_color_difference_deltaE76": 14.04637336730957,
+      "gradient_residual_vs_reference": 3.616931915283203
+    },
+    {
+      "piece_a": "S01",
+      "piece_b": "S10",
+      "shared_edge_length_px": 92.5843832693181,
+      "sample_pairs": 31,
+      "mean_color_difference_deltaE76": 22.63003921508789,
+      "mean_gradient_difference": 28.133604049682617,
+      "reference_color_difference_deltaE76": 6.752466201782227,
+      "gradient_residual_vs_reference": 14.594114303588867
+    },
+    {
+      "piece_a": "S01",
+      "piece_b": "S12",
+      "shared_edge_length_px": 165.88522688982883,
+      "sample_pairs": 55,
+      "mean_color_difference_deltaE76": 9.228431701660156,
+      "mean_gradient_difference": 1.3374369144439697,
+      "reference_color_difference_deltaE76": 7.565019130706787,
+      "gradient_residual_vs_reference": 0.9408636689186096
+    },
+    {
+      "piece_a": "S02",
+      "piece_b": "S03",
+      "shared_edge_length_px": 324.33821792420633,
+      "sample_pairs": 108,
+      "mean_color_difference_deltaE76": 7.695163249969482,
+      "mean_gradient_difference": 2.3867969512939453,
+      "reference_color_difference_deltaE76": 9.179215431213379,
+      "gradient_residual_vs_reference": 2.2828311920166016
+    },
+    {
+      "piece_a": "S02",
+      "piece_b": "S10",
+      "shared_edge_length_px": 208.1024161706202,
+      "sample_pairs": 69,
+      "mean_color_difference_deltaE76": 5.3302154541015625,
+      "mean_gradient_difference": 1.0175786018371582,
+      "reference_color_difference_deltaE76": 2.6907944679260254,
+      "gradient_residual_vs_reference": 0.9584161639213562
+    },
+    {
+      "piece_a": "S03",
+      "piece_b": "S07",
+      "shared_edge_length_px": 206.5565030323906,
+      "sample_pairs": 68,
+      "mean_color_difference_deltaE76": 4.93129825592041,
+      "mean_gradient_difference": 1.749354362487793,
+      "reference_color_difference_deltaE76": 4.200290203094482,
+      "gradient_residual_vs_reference": 2.467804193496704
+    },
+    {
+      "piece_a": "S04",
+      "piece_b": "S06",
+      "shared_edge_length_px": 337.8613287319518,
+      "sample_pairs": 112,
+      "mean_color_difference_deltaE76": 11.028732299804688,
+      "mean_gradient_difference": 3.416362762451172,
+      "reference_color_difference_deltaE76": 10.534756660461426,
+      "gradient_residual_vs_reference": 2.634469747543335
+    },
+    {
+      "piece_a": "S04",
+      "piece_b": "S08",
+      "shared_edge_length_px": 166.66661269378457,
+      "sample_pairs": 57,
+      "mean_color_difference_deltaE76": 37.947418212890625,
+      "mean_gradient_difference": 3.975861072540283,
+      "reference_color_difference_deltaE76": 44.34362030029297,
+      "gradient_residual_vs_reference": 2.71001935005188
+    },
+    {
+      "piece_a": "S04",
+      "piece_b": "S12",
+      "shared_edge_length_px": 140.10021318745376,
+      "sample_pairs": 47,
+      "mean_color_difference_deltaE76": 30.014984130859375,
+      "mean_gradient_difference": 3.287907600402832,
+      "reference_color_difference_deltaE76": 32.0189094543457,
+      "gradient_residual_vs_reference": 2.932002067565918
+    },
+    {
+      "piece_a": "S04",
+      "piece_b": "S14",
+      "shared_edge_length_px": 218.54177810043552,
+      "sample_pairs": 72,
+      "mean_color_difference_deltaE76": 9.53012752532959,
+      "mean_gradient_difference": 1.7572922706604004,
+      "reference_color_difference_deltaE76": 3.869112730026245,
+      "gradient_residual_vs_reference": 1.244047999382019
+    },
+    {
+      "piece_a": "S05",
+      "piece_b": "S06",
+      "shared_edge_length_px": 224.47450200938192,
+      "sample_pairs": 74,
+      "mean_color_difference_deltaE76": 19.03067970275879,
+      "mean_gradient_difference": 4.3799238204956055,
+      "reference_color_difference_deltaE76": 21.049957275390625,
+      "gradient_residual_vs_reference": 4.809743404388428
+    },
+    {
+      "piece_a": "S05",
+      "piece_b": "S13",
+      "shared_edge_length_px": 174.21842529835925,
+      "sample_pairs": 58,
+      "mean_color_difference_deltaE76": 6.718088150024414,
+      "mean_gradient_difference": 1.3606706857681274,
+      "reference_color_difference_deltaE76": 5.350903511047363,
+      "gradient_residual_vs_reference": 1.362037181854248
+    },
+    {
+      "piece_a": "S05",
+      "piece_b": "S14",
+      "shared_edge_length_px": 320.5937227857713,
+      "sample_pairs": 106,
+      "mean_color_difference_deltaE76": 4.453742504119873,
+      "mean_gradient_difference": 1.2504305839538574,
+      "reference_color_difference_deltaE76": 2.4743053913116455,
+      "gradient_residual_vs_reference": 1.1896727085113525
+    },
+    {
+      "piece_a": "S06",
+      "piece_b": "S12",
+      "shared_edge_length_px": 39.32430248446883,
+      "sample_pairs": 11,
+      "mean_color_difference_deltaE76": 12.218680381774902,
+      "mean_gradient_difference": 3.707927942276001,
+      "reference_color_difference_deltaE76": 7.020785808563232,
+      "gradient_residual_vs_reference": 3.542809247970581
+    },
+    {
+      "piece_a": "S06",
+      "piece_b": "S13",
+      "shared_edge_length_px": 202.6860254614757,
+      "sample_pairs": 69,
+      "mean_color_difference_deltaE76": 6.301979064941406,
+      "mean_gradient_difference": 2.0876262187957764,
+      "reference_color_difference_deltaE76": 9.471315383911133,
+      "gradient_residual_vs_reference": 2.335252046585083
+    },
+    {
+      "piece_a": "S06",
+      "piece_b": "S15",
+      "shared_edge_length_px": 238.36866219266318,
+      "sample_pairs": 83,
+      "mean_color_difference_deltaE76": 10.646612167358398,
+      "mean_gradient_difference": 3.35598087310791,
+      "reference_color_difference_deltaE76": 12.732880592346191,
+      "gradient_residual_vs_reference": 3.3998703956604004
+    },
+    {
+      "piece_a": "S07",
+      "piece_b": "S10",
+      "shared_edge_length_px": 336.2516547754673,
+      "sample_pairs": 112,
+      "mean_color_difference_deltaE76": 10.364106178283691,
+      "mean_gradient_difference": 2.6440975666046143,
+      "reference_color_difference_deltaE76": 13.638854026794434,
+      "gradient_residual_vs_reference": 2.9824373722076416
+    },
+    {
+      "piece_a": "S07",
+      "piece_b": "S11",
+      "shared_edge_length_px": 146.36190066679825,
+      "sample_pairs": 51,
+      "mean_color_difference_deltaE76": 6.666116237640381,
+      "mean_gradient_difference": 2.469724178314209,
+      "reference_color_difference_deltaE76": 10.583244323730469,
+      "gradient_residual_vs_reference": 3.435239791870117
+    },
+    {
+      "piece_a": "S07",
+      "piece_b": "S15",
+      "shared_edge_length_px": 82.08468157456517,
+      "sample_pairs": 27,
+      "mean_color_difference_deltaE76": 14.210650444030762,
+      "mean_gradient_difference": 3.292792797088623,
+      "reference_color_difference_deltaE76": 21.67228889465332,
+      "gradient_residual_vs_reference": 2.2311720848083496
+    },
+    {
+      "piece_a": "S08",
+      "piece_b": "S09",
+      "shared_edge_length_px": 163.68338211782526,
+      "sample_pairs": 54,
+      "mean_color_difference_deltaE76": 7.369452476501465,
+      "mean_gradient_difference": 2.612046957015991,
+      "reference_color_difference_deltaE76": 13.688806533813477,
+      "gradient_residual_vs_reference": 3.144139528274536
+    },
+    {
+      "piece_a": "S08",
+      "piece_b": "S12",
+      "shared_edge_length_px": 331.5745041570747,
+      "sample_pairs": 110,
+      "mean_color_difference_deltaE76": 6.907810211181641,
+      "mean_gradient_difference": 3.120706796646118,
+      "reference_color_difference_deltaE76": 10.075806617736816,
+      "gradient_residual_vs_reference": 3.270151376724243
+    },
+    {
+      "piece_a": "S10",
+      "piece_b": "S12",
+      "shared_edge_length_px": 312.39831167796024,
+      "sample_pairs": 108,
+      "mean_color_difference_deltaE76": 5.015190601348877,
+      "mean_gradient_difference": 1.5299707651138306,
+      "reference_color_difference_deltaE76": 6.686517715454102,
+      "gradient_residual_vs_reference": 1.3315380811691284
+    },
+    {
+      "piece_a": "S10",
+      "piece_b": "S15",
+      "shared_edge_length_px": 146.4854717129654,
+      "sample_pairs": 48,
+      "mean_color_difference_deltaE76": 9.274654388427734,
+      "mean_gradient_difference": 2.6237845420837402,
+      "reference_color_difference_deltaE76": 13.69884204864502,
+      "gradient_residual_vs_reference": 2.2105703353881836
+    },
+    {
+      "piece_a": "S11",
+      "piece_b": "S15",
+      "shared_edge_length_px": 311.17781413876537,
+      "sample_pairs": 103,
+      "mean_color_difference_deltaE76": 9.22579288482666,
+      "mean_gradient_difference": 2.679915428161621,
+      "reference_color_difference_deltaE76": 11.26350212097168,
+      "gradient_residual_vs_reference": 2.6292545795440674
+    },
+    {
+      "piece_a": "S11",
+      "piece_b": "S16",
+      "shared_edge_length_px": 187.30797636846646,
+      "sample_pairs": 62,
+      "mean_color_difference_deltaE76": 6.467372894287109,
+      "mean_gradient_difference": 3.7998545169830322,
+      "reference_color_difference_deltaE76": 10.783439636230469,
+      "gradient_residual_vs_reference": 5.366001129150391
+    },
+    {
+      "piece_a": "S13",
+      "piece_b": "S15",
+      "shared_edge_length_px": 192.83036195799147,
+      "sample_pairs": 64,
+      "mean_color_difference_deltaE76": 7.666882514953613,
+      "mean_gradient_difference": 2.9572432041168213,
+      "reference_color_difference_deltaE76": 5.215754985809326,
+      "gradient_residual_vs_reference": 2.534766674041748
+    },
+    {
+      "piece_a": "S13",
+      "piece_b": "S16",
+      "shared_edge_length_px": 318.749229812089,
+      "sample_pairs": 106,
+      "mean_color_difference_deltaE76": 15.718589782714844,
+      "mean_gradient_difference": 4.4567551612854,
+      "reference_color_difference_deltaE76": 12.492294311523438,
+      "gradient_residual_vs_reference": 4.836649417877197
+    }
+  ],
+  "seam_legend": {
+    "yellow": "polygon boundary",
+    "magenta": "uncovered pixel",
+    "cyan": "overlapping textures"
+  },
+  "upstream_geometry_quality": {
+    "coverage": 0.9954427083333334,
+    "psnr_covered": 19.313734873627762,
+    "ssim_gray": 0.7711558200609757,
+    "mse_covered": 761.5648193359375
+  },
+  "upstream_verification": null,
+  "pieces": [
+    {
+      "scan_piece_id": "S09",
+      "source_piece_id": "P01",
+      "match_confidence": 0.9340846816544766,
+      "match_status": "accepted",
+      "extraction_quality": 0.926471,
+      "covered_pixels": 55236,
+      "color_correction": {
+        "applied": true,
+        "sample_pixels": 52187,
+        "source_mean_Lab": [
+          51.846763610839844,
+          0.6854697465896606,
+          3.2513811588287354
+        ],
+        "target_mean_Lab": [
+          38.224178314208984,
+          3.5754971504211426,
+          8.444336891174316
+        ],
+        "source_std_Lab": [
+          10.389763832092285,
+          1.3202329874038696,
+          1.5761264562606812
+        ],
+        "target_std_Lab": [
+          12.480781555175781,
+          11.117912292480469,
+          8.137091636657715
+        ],
+        "gain": [
+          1.1006287336349487,
+          1.125,
+          1.125
+        ],
+        "mean_shift_Lab": [
+          -5.0,
+          1.4450137615203857,
+          2.59647798538208
+        ],
+        "strength": 0.5
+      }
+    },
+    {
+      "scan_piece_id": "S01",
+      "source_piece_id": "P03",
+      "match_confidence": 0.9359615355469375,
+      "match_status": "accepted",
+      "extraction_quality": 0.916661,
+      "covered_pixels": 54850,
+      "color_correction": {
+        "applied": true,
+        "sample_pixels": 51520,
+        "source_mean_Lab": [
+          45.55524444580078,
+          2.737375259399414,
+          2.4618687629699707
+        ],
+        "target_mean_Lab": [
+          41.25289535522461,
+          3.5159995555877686,
+          7.182864665985107
+        ],
+        "source_std_Lab": [
+          14.735054016113281,
+          1.083505630493164,
+          0.4907081127166748
+        ],
+        "target_std_Lab": [
+          17.336091995239258,
+          6.856493949890137,
+          7.035839080810547
+        ],
+        "gain": [
+          1.0882601737976074,
+          1.125,
+          1.0
+        ],
+        "mean_shift_Lab": [
+          -2.151174545288086,
+          0.38931214809417725,
+          2.3604979515075684
+        ],
+        "strength": 0.5
+      }
+    },
+    {
+      "scan_piece_id": "S02",
+      "source_piece_id": "P10",
+      "match_confidence": 0.8833677755879585,
+      "match_status": "accepted",
+      "extraction_quality": 0.90784,
+      "covered_pixels": 64648,
+      "color_correction": {
+        "applied": true,
+        "sample_pixels": 60881,
+        "source_mean_Lab": [
+          51.22721862792969,
+          1.2722223997116089,
+          2.8445348739624023
+        ],
+        "target_mean_Lab": [
+          52.132102966308594,
+          2.062554359436035,
+          5.8849334716796875
+        ],
+        "source_std_Lab": [
+          17.764211654663086,
+          0.9691191911697388,
+          0.6186144351959229
+        ],
+        "target_std_Lab": [
+          19.5318660736084,
+          4.422683238983154,
+          9.317028999328613
+        ],
+        "gain": [
+          1.049753189086914,
+          1.125,
+          1.125
+        ],
+        "mean_shift_Lab": [
+          0.4524421691894531,
+          0.39516597986221313,
+          1.5201992988586426
+        ],
+        "strength": 0.5
+      }
+    },
+    {
+      "scan_piece_id": "S03",
+      "source_piece_id": "P12",
+      "match_confidence": 0.9267707364333335,
+      "match_status": "accepted",
+      "extraction_quality": 0.929963,
+      "covered_pixels": 64976,
+      "color_correction": {
+        "applied": true,
+        "sample_pixels": 61493,
+        "source_mean_Lab": [
+          60.56540298461914,
+          1.2031283378601074,
+          2.7328875064849854
+        ],
+        "target_mean_Lab": [
+          60.231380462646484,
+          -1.389116644859314,
+          16.223913192749023
+        ],
+        "source_std_Lab": [
+          16.498672485351562,
+          1.016761064529419,
+          0.5578211545944214
+        ],
+        "target_std_Lab": [
+          19.468978881835938,
+          9.56027603149414,
+          12.36301326751709
+        ],
+        "gain": [
+          1.0900166034698486,
+          1.125,
+          1.125
+        ],
+        "mean_shift_Lab": [
+          -0.16701126098632812,
+          -1.2961225509643555,
+          5.0
+        ],
+        "strength": 0.5
+      }
+    },
+    {
+      "scan_piece_id": "S10",
+      "source_piece_id": "P09",
+      "match_confidence": 0.866214940175305,
+      "match_status": "accepted",
+      "extraction_quality": 0.935401,
+      "covered_pixels": 64265,
+      "color_correction": {
+        "applied": true,
+        "sample_pixels": 60398,
+        "source_mean_Lab": [
+          69.14600372314453,
+          0.9140552282333374,
+          2.1556084156036377
+        ],
+        "target_mean_Lab": [
+          66.42924499511719,
+          -1.1270310878753662,
+          9.492100715637207
+        ],
+        "source_std_Lab": [
+          14.883851051330566,
+          0.7436527013778687,
+          0.895147442817688
+        ],
+        "target_std_Lab": [
+          19.936508178710938,
+          10.169938087463379,
+          6.525903224945068
+        ],
+        "gain": [
+          1.125,
+          1.125,
+          1.125
+        ],
+        "mean_shift_Lab": [
+          -1.3583793640136719,
+          -1.020543098449707,
+          3.668246269226074
+        ],
+        "strength": 0.5
+      }
+    },
+    {
+      "scan_piece_id": "S07",
+      "source_piece_id": "P11",
+      "match_confidence": 0.9553887674794883,
+      "match_status": "accepted",
+      "extraction_quality": 0.934684,
+      "covered_pixels": 64020,
+      "color_correction": {
+        "applied": true,
+        "sample_pixels": 60610,
+        "source_mean_Lab": [
+          67.08444213867188,
+          2.405820846557617,
+          2.412238597869873
+        ],
+        "target_mean_Lab": [
+          63.64719009399414,
+          -6.916355609893799,
+          12.880754470825195
+        ],
+        "source_std_Lab": [
+          10.54982852935791,
+          1.1131571531295776,
+          0.6116830110549927
+        ],
+        "target_std_Lab": [
+          14.603767395019531,
+          19.66470718383789,
+          9.646178245544434
+        ],
+        "gain": [
+          1.125,
+          1.125,
+          1.125
+        ],
+        "mean_shift_Lab": [
+          -1.7186260223388672,
+          -4.661087989807129,
+          5.0
+        ],
+        "strength": 0.5
+      }
+    },
+    {
+      "scan_piece_id": "S12",
+      "source_piece_id": "P04",
+      "match_confidence": 0.9641834589570997,
+      "match_status": "accepted",
+      "extraction_quality": 0.933091,
+      "covered_pixels": 55653,
+      "color_correction": {
+        "applied": true,
+        "sample_pixels": 52318,
+        "source_mean_Lab": [
+          60.899024963378906,
+          0.7602751851081848,
+          2.956996202468872
+        ],
+        "target_mean_Lab": [
+          52.19677734375,
+          2.315046548843384,
+          9.018912315368652
+        ],
+        "source_std_Lab": [
+          14.441587448120117,
+          0.6645206212997437,
+          1.0204064846038818
+        ],
+        "target_std_Lab": [
+          19.46257209777832,
+          6.357431411743164,
+          5.454037189483643
+        ],
+        "gain": [
+          1.125,
+          1.125,
+          1.125
+        ],
+        "mean_shift_Lab": [
+          -4.351123809814453,
+          0.7773857116699219,
+          3.0309581756591797
+        ],
+        "strength": 0.5
+      }
+    },
+    {
+      "scan_piece_id": "S08",
+      "source_piece_id": "P02",
+      "match_confidence": 0.9312850859905055,
+      "match_status": "accepted",
+      "extraction_quality": 0.935147,
+      "covered_pixels": 56512,
+      "color_correction": {
+        "applied": true,
+        "sample_pixels": 53238,
+        "source_mean_Lab": [
+          51.868064880371094,
+          0.6939207315444946,
+          2.9336798191070557
+        ],
+        "target_mean_Lab": [
+          40.63516616821289,
+          5.262670516967773,
+          11.267362594604492
+        ],
+        "source_std_Lab": [
+          13.200879096984863,
+          0.8286635875701904,
+          0.7033290863037109
+        ],
+        "target_std_Lab": [
+          15.527427673339844,
+          7.729012966156006,
+          9.80180549621582
+        ],
+        "gain": [
+          1.088120937347412,
+          1.125,
+          1.125
+        ],
+        "mean_shift_Lab": [
+          -5.0,
+          2.284374952316284,
+          4.166841506958008
+        ],
+        "strength": 0.5
+      }
+    },
+    {
+      "scan_piece_id": "S04",
+      "source_piece_id": "P06",
+      "match_confidence": 0.9226265745162765,
+      "match_status": "accepted",
+      "extraction_quality": 0.889422,
+      "covered_pixels": 63613,
+      "color_correction": {
+        "applied": true,
+        "sample_pixels": 59750,
+        "source_mean_Lab": [
+          37.7362060546875,
+          2.576632261276245,
+          2.7983880043029785
+        ],
+        "target_mean_Lab": [
+          31.824087142944336,
+          2.783416509628296,
+          0.4066827893257141
+        ],
+        "source_std_Lab": [
+          11.208596229553223,
+          1.2818050384521484,
+          0.5691710710525513
+        ],
+        "target_std_Lab": [
+          13.035752296447754,
+          4.16607141494751,
+          10.535419464111328
+        ],
+        "gain": [
+          1.0815069675445557,
+          1.125,
+          1.125
+        ],
+        "mean_shift_Lab": [
+          -2.956059455871582,
+          0.10339212417602539,
+          -1.1958526372909546
+        ],
+        "strength": 0.5
+      }
+    },
+    {
+      "scan_piece_id": "S06",
+      "source_piece_id": "P08",
+      "match_confidence": 0.8759978976632252,
+      "match_status": "accepted",
+      "extraction_quality": 0.889828,
+      "covered_pixels": 45110,
+      "color_correction": {
+        "applied": true,
+        "sample_pixels": 40978,
+        "source_mean_Lab": [
+          49.741024017333984,
+          0.869116485118866,
+          2.7413806915283203
+        ],
+        "target_mean_Lab": [
+          42.47947311401367,
+          -2.19408917427063,
+          -4.3444037437438965
+        ],
+        "source_std_Lab": [
+          11.888298034667969,
+          0.7730175852775574,
+          0.6895409226417542
+        ],
+        "target_std_Lab": [
+          12.031306266784668,
+          5.951539039611816,
+          10.610433578491211
+        ],
+        "gain": [
+          1.0060145854949951,
+          1.125,
+          1.125
+        ],
+        "mean_shift_Lab": [
+          -3.6307754516601562,
+          -1.5316028594970703,
+          -3.5428922176361084
+        ],
+        "strength": 0.5
+      }
+    },
+    {
+      "scan_piece_id": "S15",
+      "source_piece_id": "P14",
+      "match_confidence": 0.8785062090620039,
+      "match_status": "accepted",
+      "extraction_quality": 0.918633,
+      "covered_pixels": 56394,
+      "color_correction": {
+        "applied": true,
+        "sample_pixels": 52837,
+        "source_mean_Lab": [
+          47.68670654296875,
+          2.407900094985962,
+          3.1579530239105225
+        ],
+        "target_mean_Lab": [
+          45.61396026611328,
+          -10.411049842834473,
+          5.604870796203613
+        ],
+        "source_std_Lab": [
+          8.011514663696289,
+          1.1086760759353638,
+          0.8026752471923828
+        ],
+        "target_std_Lab": [
+          9.123373031616211,
+          9.103775978088379,
+          9.092913627624512
+        ],
+        "gain": [
+          1.0693912506103516,
+          1.125,
+          1.125
+        ],
+        "mean_shift_Lab": [
+          -1.0363731384277344,
+          -5.0,
+          1.2234588861465454
+        ],
+        "strength": 0.5
+      }
+    },
+    {
+      "scan_piece_id": "S11",
+      "source_piece_id": "P16",
+      "match_confidence": 0.9393733416738932,
+      "match_status": "accepted",
+      "extraction_quality": 0.934401,
+      "covered_pixels": 55569,
+      "color_correction": {
+        "applied": true,
+        "sample_pixels": 52024,
+        "source_mean_Lab": [
+          65.24893951416016,
+          1.9771310091018677,
+          3.198159694671631
+        ],
+        "target_mean_Lab": [
+          61.72456359863281,
+          -6.493806838989258,
+          9.653380393981934
+        ],
+        "source_std_Lab": [
+          16.062620162963867,
+          0.9922090172767639,
+          1.3485329151153564
+        ],
+        "target_std_Lab": [
+          20.694664001464844,
+          7.887441158294678,
+          6.078268527984619
+        ],
+        "gain": [
+          1.125,
+          1.125,
+          1.125
+        ],
+        "mean_shift_Lab": [
+          -1.7621879577636719,
+          -4.235468864440918,
+          3.2276103496551514
+        ],
+        "strength": 0.5
+      }
+    },
+    {
+      "scan_piece_id": "S13",
+      "source_piece_id": "P13",
+      "match_confidence": 0.910993417631375,
+      "match_status": "accepted",
+      "extraction_quality": 0.923152,
+      "covered_pixels": 55113,
+      "color_correction": {
+        "applied": true,
+        "sample_pixels": 51757,
+        "source_mean_Lab": [
+          39.15771484375,
+          2.6728286743164062,
+          3.037006378173828
+        ],
+        "target_mean_Lab": [
+          31.532241821289062,
+          -3.5976362228393555,
+          -9.101963996887207
+        ],
+        "source_std_Lab": [
+          11.171432495117188,
+          1.320925235748291,
+          0.8986107110977173
+        ],
+        "target_std_Lab": [
+          13.589993476867676,
+          5.900929927825928,
+          13.551202774047852
+        ],
+        "gain": [
+          1.1082475185394287,
+          1.125,
+          1.125
+        ],
+        "mean_shift_Lab": [
+          -3.8127365112304688,
+          -3.135232448577881,
+          -5.0
+        ],
+        "strength": 0.5
+      }
+    },
+    {
+      "scan_piece_id": "S16",
+      "source_piece_id": "P15",
+      "match_confidence": 0.9589016087794378,
+      "match_status": "accepted",
+      "extraction_quality": 0.915875,
+      "covered_pixels": 55907,
+      "color_correction": {
+        "applied": true,
+        "sample_pixels": 52471,
+        "source_mean_Lab": [
+          58.57954406738281,
+          1.042311191558838,
+          2.9645676612854004
+        ],
+        "target_mean_Lab": [
+          57.60145568847656,
+          -23.963727951049805,
+          18.715600967407227
+        ],
+        "source_std_Lab": [
+          4.237379550933838,
+          0.6361901760101318,
+          0.6178070902824402
+        ],
+        "target_std_Lab": [
+          5.371112823486328,
+          4.641167163848877,
+          4.645925521850586
+        ],
+        "gain": [
+          1.125,
+          1.125,
+          1.125
+        ],
+        "mean_shift_Lab": [
+          -0.489044189453125,
+          -5.0,
+          5.0
+        ],
+        "strength": 0.5
+      }
+    },
+    {
+      "scan_piece_id": "S05",
+      "source_piece_id": "P07",
+      "match_confidence": 0.7445174060717035,
+      "match_status": "review",
+      "extraction_quality": 0.906477,
+      "covered_pixels": 62120,
+      "color_correction": {
+        "applied": true,
+        "sample_pixels": 58292,
+        "source_mean_Lab": [
+          52.67890930175781,
+          1.8287626504898071,
+          2.404681444168091
+        ],
+        "target_mean_Lab": [
+          45.1691780090332,
+          0.2980198264122009,
+          0.1658991575241089
+        ],
+        "source_std_Lab": [
+          18.937334060668945,
+          1.6030806303024292,
+          3.0365829467773438
+        ],
+        "target_std_Lab": [
+          22.268795013427734,
+          2.524928092956543,
+          5.260067462921143
+        ],
+        "gain": [
+          1.087960124015808,
+          1.125,
+          1.125
+        ],
+        "mean_shift_Lab": [
+          -3.7548656463623047,
+          -0.7653714418411255,
+          -1.1193912029266357
+        ],
+        "strength": 0.5
+      }
+    },
+    {
+      "scan_piece_id": "S14",
+      "source_piece_id": "P05",
+      "match_confidence": 0.8660216259205984,
+      "match_status": "accepted",
+      "extraction_quality": 0.931891,
+      "covered_pixels": 47571,
+      "color_correction": {
+        "applied": true,
+        "sample_pixels": 43832,
+        "source_mean_Lab": [
+          57.2251091003418,
+          1.723403811454773,
+          2.3870694637298584
+        ],
+        "target_mean_Lab": [
+          46.74662780761719,
+          -0.22020013630390167,
+          1.0273287296295166
+        ],
+        "source_std_Lab": [
+          16.113428115844727,
+          1.2358474731445312,
+          0.627552330493927
+        ],
+        "target_std_Lab": [
+          24.25602149963379,
+          2.454110860824585,
+          4.991172790527344
+        ],
+        "gain": [
+          1.125,
+          1.125,
+          1.125
+        ],
+        "mean_shift_Lab": [
+          -5.0,
+          -0.9718019962310791,
+          -0.6798703670501709
+        ],
+        "strength": 0.5
+      }
+    }
+  ],
+  "config": {
+    "schema_version": "1.0",
+    "color_space": "Lab",
+    "color_correction": true,
+    "color_strength": 0.5,
+    "color_gain_limits": [
+      0.8,
+      1.25
+    ],
+    "color_max_offset": 10.0,
+    "color_sample_erode_px": 3,
+    "blend_mode": "feather",
+    "feather_px": 3.0,
+    "edge_erode_px": 0,
+    "evaluate_ssim": true,
+    "adjacency_tolerance_px": 8.0,
+    "write_steps": false,
+    "fail_on_manual_review": false,
+    "max_canvas_pixels": 25000000
+  }
+}
