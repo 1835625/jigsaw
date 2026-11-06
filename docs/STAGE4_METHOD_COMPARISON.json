@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0",
+  "algorithm_version": "stage4-compare-1.0.0",
+  "evaluation_size_px": [
+    1280,
+    720
+  ],
+  "normalization": "one global outer-frame mapping; no per-piece refinement",
+  "coverage_definition": "union of warped alpha > 0.001, clipped to target polygons",
+  "config": {
+    "schema_version": "1.0",
+    "color_space": "Lab",
+    "color_correction": true,
+    "color_strength": 0.5,
+    "color_gain_limits": [
+      0.8,
+      1.25
+    ],
+    "color_max_offset": 10.0,
+    "color_sample_erode_px": 3,
+    "blend_mode": "feather",
+    "feather_px": 3.0,
+    "edge_erode_px": 0,
+    "evaluate_ssim": true,
+    "adjacency_tolerance_px": 8.0,
+    "write_steps": true,
+    "fail_on_manual_review": false,
+    "max_canvas_pixels": 25000000
+  },
+  "input_sha256": {
+    "pieces": "5819edc5f4ae264879016939443f648c3b81836e4e7a74eeccc91c6436c3f3bf",
+    "geometry": "aa3a2bda241fd50effb828e0575a6501f33a3e73252c2af871fe09d22c3cbbcf",
+    "sift": "d08c50843986d96a690820a210fba8904c016ef569f62f16bf526123b379e21a",
+    "layout": "4e69f24a7f7098ce3ccc8a0156d1bf18aeff44686c38fbfb930781f2bf3b2fe6",
+    "reference": "3a90306f775d9a5122d1de12049f31fcd16faa9b0b4790f9cbde33766bf1aba4"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "opencv": "4.12.0",
+    "shapely": "2.1.2",
+    "scipy": "1.17.0",
+    "scikit_image": "0.25.2"
+  },
+  "methods": {
+    "geometry": {
+      "input_mode": "geometry_placements",
+      "piece_count": 16,
+      "native_rectangle_px": [
+        2027.0166229464926,
+        1142.9549737845618
+      ],
+      "native_canvas_size_px": [
+        2028,
+        1143
+      ],
+      "H_native_to_evaluation": [
+        [
+          -0.6314699077994628,
+          0.0,
+          1280.0
+        ],
+        [
+          0.0,
+          -0.6299460753173243,
+          720.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "orientation": {
+        "method": "reference_gray_correlation",
+        "candidates": [
+          {
+            "clockwise_deg": 0,
+            "gray_correlation": -0.3170079011488428
+          },
+          {
+            "clockwise_deg": 180,
+            "gray_correlation": 0.9275464447890699
+          }
+        ],
+        "ambiguous": false,
+        "chosen_clockwise_deg": 180
+      },
+      "reference_used_for_matching": false,
+      "target_geometry_source": "estimated_layout",
+      "upstream_status": "approximate",
+      "matching_review": [],
+      "warnings": [
+        "Stage 3 layout is approximate; gaps, overlaps and boundary errors remain.",
+        "S06: upstream manual review required."
+      ],
+      "raw": {
+        "available": true,
+        "mse": 887.3746025028935,
+        "psnr_db": 18.649733662267142,
+        "identical": false,
+        "covered_psnr_db": 18.836178567604385,
+        "ssim_gray": 0.680641277990323
+      },
+      "corrected": {
+        "available": true,
+        "mse": 586.026246021412,
+        "psnr_db": 20.451632939163417,
+        "identical": false,
+        "covered_psnr_db": 20.746132684613062,
+        "ssim_gray": 0.6845588291252066
+      },
+      "raster": {
+        "covered_fraction": 0.9962565104166666,
+        "uncovered_pixels": 3450,
+        "overlap_pixels": 6502
+      },
+      "warped_measured_geometry": {
+        "total_piece_area": 920375.0465569888,
+        "rectangle_area": 921600.0,
+        "missing_area": 5100.531535102148,
+        "overlap_excess_area": 2164.71252932318,
+        "outside_area": 1710.8655627678515,
+        "coverage_fraction": 0.9944655690808354,
+        "score": 0.009752665134470687,
+        "area_unit": "assembly_px_squared"
+      },
+      "target_geometry": {
+        "total_piece_area": 920375.1796343025,
+        "rectangle_area": 921600.0,
+        "missing_area": 5100.384775779076,
+        "overlap_excess_area": 2164.691569084185,
+        "outside_area": 1710.8728409976522,
+        "coverage_fraction": 0.9944657283248926,
+        "score": 0.009752489402666611,
+        "area_unit": "assembly_px_squared"
+      },
+      "native_status": "review"
+    },
+    "sift": {
+      "input_mode": "reference_assignments",
+      "piece_count": 16,
+      "native_rectangle_px": [
+        1280.0,
+        720.0
+      ],
+      "native_canvas_size_px": [
+        1280,
+        720
+      ],
+      "H_native_to_evaluation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "orientation": {
+        "method": "reference_assignments",
+        "chosen_clockwise_deg": 0
+      },
+      "reference_used_for_matching": true,
+      "target_geometry_source": "known_cut_layout",
+      "upstream_status": null,
+      "matching_review": [
+        "S05"
+      ],
+      "warnings": [
+        "S05: upstream manual review required.",
+        "S06: upstream manual review required."
+      ],
+      "raw": {
+        "available": true,
+        "mse": 835.6444462528935,
+        "psnr_db": 18.910588296924466,
+        "identical": false,
+        "covered_psnr_db": 19.290818228480106,
+        "ssim_gray": 0.7714523711210427
+      },
+      "corrected": {
+        "available": true,
+        "mse": 521.770810546875,
+        "psnr_db": 20.956005811842093,
+        "identical": false,
+        "covered_psnr_db": 21.595937307046597,
+        "ssim_gray": 0.7804850927891651
+      },
+      "raster": {
+        "covered_fraction": 0.9954448784722222,
+        "uncovered_pixels": 4198,
+        "overlap_pixels": 4107
+      },
+      "warped_measured_geometry": {
+        "total_piece_area": 941006.2937336278,
+        "rectangle_area": 921600.0,
+        "missing_area": 4787.729064171243,
+        "overlap_excess_area": 17448.69992215,
+        "outside_area": 6745.322875649041,
+        "coverage_fraction": 0.9948049814841892,
+        "score": 0.03079868015226495,
+        "area_unit": "assembly_px_squared"
+      },
+      "target_geometry": {
+        "total_piece_area": 921600.00073775,
+        "rectangle_area": 921600.0,
+        "missing_area": 0.00826546636826464,
+        "overlap_excess_area": 0.009003216517157853,
+        "outside_area": 0.0,
+        "coverage_fraction": 0.999999991031395,
+        "score": 1.8737720129772937e-08,
+        "area_unit": "assembly_px_squared"
+      },
+      "native_status": "review"
+    }
+  }
+}

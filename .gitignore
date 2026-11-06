@@ -50,3 +50,6 @@ weights/
 .vscode/
 *.swp
 *~
+
+# Reproducible Stage 4 cross-method figures and native placement plans
+stage4_assembly/output/method_comparison/

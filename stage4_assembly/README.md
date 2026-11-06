@@ -17,8 +17,8 @@ python stage4_assembly/assemble.py \
 默认读取 `stage2_piece_extraction/output/pieces.json` 及其相对路径下的 RGBA/mask，
 布局来自 `stage3_feature_matching/quad_puzzle/examples/output.json`，
 输出到 `stage4_assembly/output/`。这些是仓库样本的结果。
-生成的 PNG、报告与人工操作表不纳入版本控制；首次克隆后运行上述命令即可生成，
-已有 Stage 2/3 样本输入随基础分支保留，无需另外下载输出图像。
+仓库保留了这组样例的 PNG、报告与人工操作表；上述命令可重新生成。
+新一批数据请使用独立输出目录，避免覆盖样例。
 新一批数据必须显式指定对应输入：
 
 ```bash
@@ -75,12 +75,12 @@ H_table_to_assembly = H_PNG_to_assembly @ C
 画布保持实物几何尺度，评价时显式缩放参考图。
 本模式不需要 P 编号，计划的 `source_piece_id=null`，不会编造对应关系。
 
-### README 原设计中的参考图 assignments
+### SIFT 参考图 assignments
 
 ```bash
 python stage4_assembly/assemble.py \
   --pieces stage2_piece_extraction/output/pieces.json \
-  --assignments stage4_assembly/input/assignments.json \
+  --assignments stage3_feature_matching/output/assignments.json \
   --layout stage1_capture_calibration/output/cut_pdf/jigsaw_layout.json \
   --reference stage1_capture_calibration/output/reference/reference.png
 ```
@@ -160,4 +160,46 @@ python -m unittest discover -s tests -v
 测试覆盖独立像素真值、裁剪偏移、透明边、两种协议、桌面角度、缺口不补图、
 严格输入拒绝、重复运行及实拍回归。
 详见 [`docs/REPRODUCTION_STAGE4.md`](../docs/REPRODUCTION_STAGE4.md)。
+
+## 6. 几何与 SIFT 的统一对比
+
+本分支的 `stage3_feature_matching/match_sift.py` 已实现 SIFT + RANSAC +
+匈牙利一一分配。它使用参考图切出的 P 模板、已知源多边形和实拍 S 碎片，
+输出 PNG 到参考图的单应；几何求解只使用局部片形，保持旋转和平移。
+
+在仓库根目录执行：
+
+```bash
+python stage4_assembly/compare_methods.py
+```
+
+默认复用已有几何位姿和 SIFT `assignments.json`，不重复运行 Stage 3 搜索。
+如需重新匹配，先运行 `python stage3_feature_matching/match_sift.py`。
+全部输入路径可用 `--pieces/--geometry/--sift/--layout/--reference` 指定，
+输出目录可用 `--output` 指定。
+
+产物位于 `output/method_comparison/`：
+
+- `comparison_raw.png`、`comparison_corrected.png`：参考图与两方案的横向对比。
+- `comparison_report.json`、`comparison.md`：共同评价网格上的指标与复核项。
+- `geometry/`、`sift/`：按原生坐标运行第四阶段，分别生成图像、诊断和人工计划。
+- 各方案的 `*_raw.png`、`*_corrected.png`、`*_coverage.png`：共同网格上的图像和 Alpha 覆盖。
+
+比较时直接把同一批 RGBA 碎片渲染到参考图的 1280×720 网格，使用相同羽化和校色参数。
+几何布局仅增加一个整体外框归一化，单片位姿不优化；其整体朝向由参考图辅助判断。
+原生毫米坐标计划保存在单独目录，共同网格仅供图像评价。
+
+必须同时查看三种量：
+
+1. `raster`：根据变换后的 Alpha 统计真实纹理覆盖，不用 RGB 非零判断覆盖。
+2. `warped_measured_geometry`：实测 PNG 角点经过实际刚体/单应变换后，计算缺口、重叠和越界。
+3. `target_geometry`：用于裁剪纹理的目标轮廓。SIFT 的目标来自已知切割布局，
+   其接近 100% 的覆盖率不能当作匹配精度或复原正确率。
+
+两种方案在原图、切割先验和变换自由度方面不同；这不是相同无参考条件下的算法排名。
+校色后的指标另受参考图统计量辅助，未校色指标必须保留。
+SIFT 的单应可含尺度、剪切和透视变化，其参考像素坐标不能直接当作实物毫米摆放坐标。
+完整数据、环境及限制见 [对比复现记录](../docs/REPRODUCTION_STAGE4_COMPARISON.md)。
+
+验证：`python -m unittest discover -s tests -v`，包含 4 个新增对比测试。
 
